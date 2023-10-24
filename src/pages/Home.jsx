@@ -23,7 +23,7 @@ function Home() {
 
   return (
     <div className={css.homeContainer}>
-      <h1 className={css.homeHeader}>Популярні фільми</h1>
+      <h1 className={css.homeHeader}>Популярні фільми:</h1>
       <MovieList movies={popularMovies} />
     </div>
   );

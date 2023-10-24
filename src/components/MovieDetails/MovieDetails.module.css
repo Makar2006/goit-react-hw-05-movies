@@ -1,0 +1,29 @@
+.backBtn,
+.castBtn,
+.reviewBtn {
+  font-size: 1.5em;
+  background: linear-gradient(21deg, #10abff, #1beabd);
+  padding: 5px 10px;
+  display: inline-block;
+  border-radius: 9999em;
+  color: black;
+
+  text-decoration: none;
+}
+.movDet {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.descriTxt {
+  width: 800px;
+}
+.bold {
+  font-weight: bold;
+}
+
+.btnList {
+  display: flex;
+  gap: 20px;
+}

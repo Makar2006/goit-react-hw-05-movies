@@ -1,0 +1,32 @@
+.header {
+  background-color: lightgray;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65px;
+}
+.navList {
+  display: flex;
+
+  align-items: center;
+}
+.navListItem {
+  margin-right: 80px;
+  color: black;
+
+  border: solid 1px black;
+  border-radius: 5px;
+  padding: 3px;
+  width: 100px;
+}
+.navLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  width: 100px;
+  height: 100%;
+  text-decoration: none;
+}

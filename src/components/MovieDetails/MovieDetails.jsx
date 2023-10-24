@@ -50,22 +50,32 @@ function MovieDetails() {
       <Link to={backLinkHref.current} className={css.backBtn}>
         Go Back
       </Link>
-      <h1>{movieDetails.title}</h1>
-      <img src={movieImg} alt={movieDetails.title} className={css.imgDetails} />
-      <p className={css.ratingText}>Рейтинг: {movieDetails.vote_average}</p>
-      <p className={css.descriTxt}>Опис: {movieDetails.overview}</p>
-      <ul className={css.btnList}>
-        <li className={css.btnListItem}>
-          <Link to={`/movies/${movieId}/cast`} className={css.castBtn}>
-            Cast
-          </Link>
-        </li>
-        <li className={css.btnListItem}>
-          <Link to={`/movies/${movieId}/reviews`} className={css.reviewBtn}>
-            Reviews
-          </Link>
-        </li>
-      </ul>
+      <div className={css.movDet}>
+        <h1>{movieDetails.title}</h1>
+        <img
+          src={movieImg}
+          alt={movieDetails.title}
+          className={css.imgDetails}
+        />
+        <p className={css.ratingText}>
+          <span className={css.bold}>Рейтинг:</span> {movieDetails.vote_average}
+        </p>
+        <p className={css.descriTxt}>
+          <span className={css.bold}>Опис:</span> {movieDetails.overview}
+        </p>
+        <ul className={css.btnList}>
+          <li className={css.btnListItem}>
+            <Link to={`/movies/${movieId}/cast`} className={css.castBtn}>
+              Cast
+            </Link>
+          </li>
+          <li className={css.btnListItem}>
+            <Link to={`/movies/${movieId}/reviews`} className={css.reviewBtn}>
+              Reviews
+            </Link>
+          </li>
+        </ul>
+      </div>
 
       <main>
         <Suspense fallback={<div>Loading...</div>}>

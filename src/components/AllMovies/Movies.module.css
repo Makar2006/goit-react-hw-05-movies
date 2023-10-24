@@ -1,0 +1,35 @@
+.moiveContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.moviesForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.searchInput {
+  font-size: 1.5em;
+  background: linear-gradient(21deg, #10abff, #1beabd);
+  padding: 3px;
+  display: inline-block;
+  border-radius: 9999em;
+  color: black;
+}
+
+.searchButton {
+  border: 2px solid darkviolet;
+  background-color: lightgray;
+  color: black;
+  letter-spacing: -0.14px;
+  text-transform: uppercase;
+  border-radius: 40px;
+
+  padding: 14px 28px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  display: inline-flex;
+}

@@ -3,7 +3,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
-const BASE_URL = 'https://api.themoviedb.org/3/search/movie';
+const BASE_URL = 'https://api.themoviedb.org/3/movie';
 const API_KEY = '1adabd4496cd17ddf47ee307481418a1';
 
 function Reviews() {
@@ -27,13 +27,17 @@ function Reviews() {
 
   return (
     <div className={css.reviewContainer}>
-      <h2 className={css.reviewHeadeer}>Reviews</h2>
+      <h2 className={css.reviewHeadeer}>Reviews:</h2>
       {reviews.length > 0 ? (
         <ul className={css.reviewsList}>
           {reviews.map(rev => (
             <li key={rev.id} className={css.reviewItem}>
-              <p>{rev.author}</p>
-              <p>{rev.content}</p>
+              <p>
+                <span className={css.bold}>Name:</span> {rev.author}
+              </p>
+              <p>
+                <span className={css.bold}>Post:</span> {rev.content}
+              </p>
             </li>
           ))}
         </ul>

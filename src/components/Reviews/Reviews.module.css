@@ -1,0 +1,20 @@
+.reviewContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.reviewHeadeer {
+  font-size: 40px;
+  margin: 0;
+}
+.reviewItem {
+  width: 800px;
+  border: black solid 3px;
+  padding: 5px;
+}
+.bold {
+  font-weight: bold;
+}
+.noReviewText {
+  font-weight: 700;
+}
